@@ -2,7 +2,7 @@
 	<div>
 		<h1>{{title}}</h1>
 		<ul>
-			<li v-for="book in books">{{book.title}} - {{book.author}}</li>
+			<li v-for="book in books">{{book.title}}:{{book.author}}</li>
 		</ul>
 	</div>
 </template>
@@ -14,9 +14,9 @@
 			return {
 				title: 'All Books',
 				books: [
-					{title: "Lord of the Rings", author: "JRR Tolkien"},
-					{title: "Hitchhikers Guide To The Galaxy", author: "Douglas Adams"},
-					{title: "Fear & Loathing in Las Vegas", author: "Hunter S. Thompson"}
+					{title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
+    				{title: 'American Gods', author: 'Neil Gaiman'},
+    				{title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
 				]
 
 			}
